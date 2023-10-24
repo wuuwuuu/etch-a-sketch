@@ -1,0 +1,43 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgrey;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 100px;
+}
+#container{
+    width: 100%;
+    max-width: 650px;
+    height: 100%;
+    max-height: 500px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.square {
+    background-color: white;
+}
+.square:hover{
+    background-color: black;
+}
+.button-container{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+.reset, .grid-size{
+    background-color: skyblue;
+    color: black;
+    border-color: white;
+    border-radius: 5px;
+    height: 50px;
+    width: 80px;
+    gap: 10px;
+}
