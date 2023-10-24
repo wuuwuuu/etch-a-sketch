@@ -30,17 +30,23 @@ function setHover() {
     }
     squares.forEach(square => {
         square.onmouseover = () => {
+            let color = randomColor();
             if (flag == true) {
-                square.style.backgroundColor = "#000000";
+                square.style.backgroundColor = color;
             }
             square.onmousedown = () => {
-                square.style.backgroundColor="#000000";
+                square.style.backgroundColor= color;
                 flag = true;
             }
         }
     })
 }
-
+function randomColor() {
+    const r = Math.floor(Math.random() * 256);
+    const g = Math.floor(Math.random() * 256);
+    const b = Math.floor(Math.random() * 256);
+    return "rgb(" + r + "," + g + "," + b + ")";
+}
 function resetGrid() {
     let square = document.querySelectorAll(".square");
     for (let i = 0; i < square.length; i++) {
